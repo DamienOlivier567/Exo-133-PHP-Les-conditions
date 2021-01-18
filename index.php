@@ -37,18 +37,15 @@ else{
 
 //Cinquieme ligne
 echo"<br><br>";
-$color = 5;
-$red = 5;
-$green = 6;
-
-
- if ($color === $red) {
-    echo "Hello";
+$color = "red";
+    switch($color) {
+    case "red":
+        echo "Hello";
+            break;
+    case "green":
+        echo "Welcome";
+            break;
+        default:
+            echo "color ne vaut rien";
 }
- elseif ($color === $green){
-     echo "Welcome";
- }
- else{
-     echo "color ne vaux pas red ou grenn";
- }
 
